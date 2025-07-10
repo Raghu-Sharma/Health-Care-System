@@ -1,0 +1,151 @@
+/* style.css */
+
+/* Background Animation */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #f3ec78, #af4261, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Stylish Container - sirf index page ke liye */
+.index-page .container {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 2px solid #ffffff44;
+}
+
+/* Button Styling */
+.btn-danger {
+  background-color: #ff416c;
+  border: none;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+
+.btn-danger:hover {
+  background-color: #ff4b2b;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 75, 43, 0.6);
+}
+
+/* Modal Styling */
+.modal-content {
+  background: #121212;
+  color: white;
+  border-radius: 15px;
+}
+
+.modal-header {
+  background: #202020;
+  border-bottom: 1px solid #444;
+}
+
+.toggle-button {
+  transition: 0.3s ease;
+}
+
+.toggle-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 0;
+  margin-left: 2px;
+}
+
+.myimg {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.dynamic-text {
+  animation: textColorChange 15s ease infinite;
+}
+
+@keyframes textColorChange {
+  0% { color: #f3ec78; }
+  25% { color: #af4261; }
+  50% { color: #23a6d5; }
+  75% { color: #23d5ab; }
+  100% { color: #f3ec78; }
+}
+
+
+/* Feedback Form Styles */
+.feedback-container {
+    width: 400px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feedback-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.stars i {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.stars i.selected {
+    color: gold;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

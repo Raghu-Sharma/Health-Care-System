@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>blog</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+
+<body>
+
+<!--  this is navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="logo">
+            <img alt="" class="myimg" src="{{url_for('static',filename='img.png')}}">
+        </div>
+        <a class="navbar-brand dynamic-text" href="#">Health Center</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="/index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/developer">Developer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="feedback">Feedback</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<div class="container my-4 mt-4">
+
+    <div class="container">
+        <h1>Latest in Healthcare & Medicine</h1>
+        <br>
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <h5>How AI is Revolutionizing Disease Diagnosis</h5>
+            <p>Artificial Intelligence is transforming healthcare by improving accuracy in disease diagnosis.
+                ML models analyze vast patient ...
+                <a class="read-more"
+                   href="https://www.sciencenewstoday.org/how-ai-is-transforming-healthcare-diagnosis-treatment-and-beyond">Read
+                    More</a></p>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <h5>Understanding Common Cold vs. Flu: Symptoms & Treatment</h5>
+            <p>People often confuse the common cold and flu. Knowing the difference can help you
+                take the right ...
+                <a class="read-more" href="https://www.webmd.com/cold-and-flu/flu-cold-symptoms">Read More</a></p>
+        </div>
+
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <h5>Telemedicine: The Future of Remote Healthcare</h5>
+            <p>Telemedicine allows doctors to consult with patients remotely. AI-powered chatbots and virtual
+                healthcare assistants...
+                <a class="read-more" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7502422/">Read More</a></p>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="blog-post">
+            <h5>AI-Powered Chatbots in Healthcare</h5>
+            <p>AI chatbots are being used to answer medical queries, suggest treatments, and even schedule doctor ...
+                <a class="read-more" href="https://capacity.com/learn/ai-chatbots/chatbot-in-healthcare/">Read More</a>
+            </p>
+        </div>
+
+        <!-- Blog Post 5 -->
+        <div class="blog-post">
+            <h5>Best Home Remedies for Stomach Problems</h5>
+            <p>Ginger tea, peppermint, and probiotics can help with digestion and reduce bloating...
+                <a class="read-more"
+                   href="https://www.healthline.com/health/digestive-health/natural-upset-stomach-remedies">Read
+                    More</a></p>
+        </div>
+
+        <!-- Blog Post 6 -->
+        <div class="blog-post">
+            <h5>Why Regular Exercise is Essential for Mental Health</h5>
+            <p>Physical activity releases endorphins, reducing stress and anxiety. Discover the best exercises to ...
+                <a class="read-more" href="https://www.verywellmind.com/mental-health-benefits-of-exercise-2584094">Read
+                    More</a></p>
+        </div>
+
+        <!-- Blog Post 7 -->
+        <div class="blog-post">
+            <h5>How to Identify Early Symptoms of Cancer</h5>
+            <p>If you've had family members deal with cancer or you've been diagnosed with a precancerous condition,
+                it's...
+                <a class="read-more" href="https://www.wikihow.com/Detect-Cancer-Early">Read More</a></p>
+        </div>
+
+        <!-- Blog Post 8 -->
+        <div class="blog-post">
+            <h5>Best Sleeping Habits for a Healthy Life</h5>
+            <p>Make sure you exercise at least two hours before bedtime though, or it may be difficult to fall asleep...
+                <a class="read-more" href="https://www.mdanderson.org/publications/focused-on-health/healthy-sleep-habits.h13-1589046.html#:
+            ~:text=Your%20pre%2Dsleep%20activity%20should,to%20less%20than%2030%20minutes.">Read
+                    More</a></p>
+        </div>
+
+        <!-- Blog Post 9 -->
+        <div class="blog-post">
+            <h5>The Science Behind Meditation & Stress Relief</h5>
+            <p> According to neuroscience research, mindfulness practices dampen activity in our amygdala and increase
+                the connections...
+
+                <a class="read-more" href="https://www.mindful.org/10-things-we-know-about-the-science-of-meditation/#:~:text=According%20to%20neuroscience%20research%2C%20mindfulness,
+        stress%20when%20we%20experience%20it." target="_blank">Read More</a></p>
+        </div>
+
+    </div>
+    <br><br><br>
+
+</div>
+<script crossorigin="anonymous"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
